@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road Ecuador | Próximamente</title>
+    <link rel="icon" type="image/webp" href="assets/img/favicon.webp">
+
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .road-hero {
+            height: 100vh;
+            background: url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3') center/cover;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+            text-align: center; color: var(--white); position: relative;
+        }
+        .road-overlay {
+            position: absolute; inset: 0; background: rgba(2, 48, 32, 0.9); /* Verde muy oscuro casi negro */
+            z-index: 1;
+        }
+        .road-content { 
+            position: relative; z-index: 2; padding: 20px; max-width: 800px; 
+        }
+        .road-content h1 { color: var(--white); margin-bottom: 1.5rem; }
+        .road-content p { color: #ccc; font-size: 1.5rem; margin-bottom: 2.5rem; font-weight: 300; }
+    </style>
+</head>
+<body>
+    <div class="road-hero">
+        <div class="road-overlay"></div>
+        <div class="road-content">
+            <h1>Road Ecuador</h1>
+            <p>Próximamente: Estamos construyendo el futuro del turismo en el Ecuador.</p>
+            <a href="index.html" class="btn btn-primary">Volver al Inicio</a>
+        </div>
+    </div>
+</body>
+</html>
